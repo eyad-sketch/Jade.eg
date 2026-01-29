@@ -505,11 +505,12 @@ footer .social-icons a:hover img {
 #nav-links a:visited,
 #nav-links a:active,
 #nav-links a:focus {
-  text-decoration: none;
-  color: #182620;
+  text-decoration: none !important;
+  color: #182620 !important;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 
 #nav-links a {
   position: relative;
@@ -530,4 +531,5 @@ footer .social-icons a:hover img {
 #nav-links a:hover::after {
   width: 100%;
 }
+
 
