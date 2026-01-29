@@ -4,97 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JADE Café | Mood Worth a Gem</title>
+
   <link rel="stylesheet" href="index.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
 
-  <!-- GRAIN OVERLAY -->
-  <div class="grain"></div>
+<div class="grain"></div>
 
 <header class="navbar reveal">
+
   <div class="logo">
     <h1>Jade</h1>
   </div>
 
-  <!-- Hamburger Menu Icon -->
   <div class="hamburger" id="hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- Navigation Links -->
   <nav id="nav-links">
-    <ul>About</ul>
-    <ul>Menu</ul>
-    <ul>Experience</ul>
+    <ul>
+      <ul><a href="#about">About</a></ul>
+      <ul><a href="#menu">Menu</a></ul>
+      <ul><a href="#experience">Experience</a></ul>
+    </ul>
   </nav>
+
 </header>
 
-    <!-- HERO TEXT -->
-<div class="hero-text reveal">
-  <img src="jade 2d.png" alt="Mood Worth a Gem" class="hero-image">
-  <p>Crafted calm. Natural luxury. Experience inspired by jade.</p>
-  <button id="scrollMenu">Explore Menu</button>
-</div>
+<section class="hero">
+  <div class="hero-text reveal">
+    <img src="jade 2d.png" alt="Mood Worth a Gem" class="hero-image">
+    <p>Crafted calm. Natural luxury. Experience inspired by jade.</p>
+    <button id="scrollMenu">Explore Menu</button>
+  </div>
+</section>
 
+<section id="about" class="about">
+  <div class="about-card reveal">
+    <h2>About JADE</h2>
+    <p>
+      JADE is a modern café inspired by gemstones and nature.
+      A place designed for slow moments and refined taste.
+    </p>
+  </div>
+</section>
 
-  </section>
+<section id="menu" class="menu">
+  <h2 class="reveal">Signature Selection</h2>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="about-card reveal">
-      <h2>About JADE</h2>
-      <p>
-        JADE is a modern café inspired by gemstones and nature.
-        A place designed for slow moments and refined taste.
-      </p>
+  <div class="menu-grid">
+
+    <div class="menu-card reveal">
+      <div class="img coffee"></div>
+      <h3>Jade Latte</h3>
+      <p>Velvety espresso with creamy balance.</p>
     </div>
-  </section>
 
-  <!-- MENU -->
-  <section id="menu" class="menu">
-    <h2 class="reveal">Signature Selection</h2>
-
-    <div class="menu-grid">
-      <div class="menu-card reveal">
-        <div class="img coffee"></div>
-        <h3>Jade Latte</h3>
-        <p>Velvety espresso with creamy balance.</p>
-      </div>
-
-      <div class="menu-card reveal">
-        <div class="img matcha"></div>
-        <h3>Cool Drinks</h3>
-        <p>Earthy, calm energy.</p>
-      </div>
-
-      <div class="menu-card reveal">
-        <div class="img herbal"></div>
-        <h3>Herbal Infusion</h3>
-        <p>Nature in every sip.</p>
-      </div>
+    <div class="menu-card reveal">
+      <div class="img matcha"></div>
+      <h3>Cool Drinks</h3>
+      <p>Earthy, calm energy.</p>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="experience reveal">
-    <h2>The JADE Experience</h2>
-    <p>Minimal space. Soft tones. Slow living.</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="reveal">
-    <div class="social-icons">
-      <a href="#"><img src="https://img.icons8.com/ios-filled/24/182620/instagram-new.png"/></a>
-      <a href="#"><img src="https://img.icons8.com/ios-filled/24/182620/twitter.png"/></a>
-      <a href="#"><img src="https://img.icons8.com/ios-filled/24/182620/facebook-new.png"/></a>
+    <div class="menu-card reveal">
+      <div class="img herbal"></div>
+      <h3>Herbal Infusion</h3>
+      <p>Nature in every sip.</p>
     </div>
-    <p>© 2026 JADE Café — Mood Worth a Gem</p>
-  </footer>
 
-  <script src="index.js"></script>
+  </div>
+</section>
+
+<section id="experience" class="experience reveal">
+  <h2>The JADE Experience</h2>
+  <p>Minimal space. Soft tones. Slow living.</p>
+</section>
+
+<footer class="reveal">
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/jadecafe__eg/"><img src="https://img.icons8.com/ios-filled/24/182620/instagram-new.png" alt="Instagram"></a>
+    <a href="https://www.threads.com/@jadecafe__eg?xmt=AQF0gx89VutyaWyC7mdOKo45yS9Hy1W2d8g7ZtC0E9rxBy8"><img src="https://img.icons8.com/ios-filled/24/182620/threads.png" alt="Threads"></a>
+    <a href="https://l.instagram.com/?u=http%3A%2F%2Ffacebook.com%2Fprofile.php%3Fid%3D61565665569676%26mibextid%3DLQQJ4d%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio&e=AT0-oN6kDMn6hKPxBTJD3xHTJmBUD-d4UtbgqjKhdYVlc6x2nLeMjcuFjvJH40144oCGcZlDj-D9fGMELhJBNRx_wSe2OIhUDLaf4TVmyQ"><img src="https://img.icons8.com/ios-filled/24/182620/facebook-new.png" alt="Facebook"></a>
+  </div>
+
+  <p>© 2026 JADE Café — Mood Worth a Gem</p>
+
+</footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -77,6 +77,42 @@ body {
   z-index: 1000;
 }
 
+#nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #182620;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: 0.05em;
+  padding-bottom: 4px;
+}
+
+/* underline animation */
+#nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #4f7f6a; /* jade tone */
+  transition: width 0.3s ease;
+}
+
+#nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
 /* Logo */
 .navbar .logo-img {
   max-height: 50px;
