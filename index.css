@@ -157,7 +157,6 @@ body {
 
 
 .hero {
-  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -165,29 +164,27 @@ body {
   flex-direction: column;
   height: 100vh;
   min-height: 700px;
-  overflow: visible;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;   /* keep ONLY this */
 }
+
 
 .hero-image {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   height: auto;
-  max-width: 1600px;         /* adjust size as you want */
-  width: 100%;              /* makes it responsive */
-  height: auto;
-  display: block;           /* ensures it behaves like a block element */
-  margin: 0 auto 20px;      /* centers it horizontally and adds bottom space */
-  animation: heroFloat 4s ease-in-out infinite, glow 3s infinite alternate;
-  transform-origin: center; /* ensures animation rotates/floats around center */
+  display: block;
+  margin: 0 auto 20px;
+  animation: heroFloat 3s ease-in-out infinite, glow 3s infinite alternate;
+  transform-origin: center;
 }
+
 
 
 @keyframes heroFloat {
   0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-5px); }
-  50% { transform: translateY(-5px); }
+  50% { transform: translateY(20px); }
 }
 
 @keyframes glow {
@@ -284,43 +281,12 @@ body {
 }
 
 
-/* ======================
-   FLOATING GEMS
-====================== */
-.gem {
-  position: absolute;
-  width: 440px;
-  height: 600px;
-  background-image: url("");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: gemFloat 6s ease-in-out infinite;
-  pointer-events: auto;
-  z-index: 3; /* gem stays on top */
-}
 
 /* Optional: animate glow intensity */
 @keyframes gemGlow {
   0% { filter: drop-shadow(0 0 15px #aef7ff); }
   100% { filter: drop-shadow(0 0 30px #aef7ff); }
 }
-
-
-.gem {
-  animation: gemFloat 6s ease-in-out infinite, gemGlow 3s ease-in-out infinite alternate;
-}
-
-
-
-
-
-
-
-
-.gem-1 { top: -2%; left: -12%; animation-duration: 4s; }
-.gem-2 { bottom: -10%; right: -14%; animation-duration: 3s; }
-
 
 @keyframes gemFloat {
   0% { transform: translateY(0); }
@@ -493,27 +459,10 @@ footer .social-icons a:hover img {
     padding-bottom: 60px;
   }
 
-  .hero-image {
-    margin-top: 60px; /* pulls image UP without breaking layout */
-    max-width: 2200px;
-  }
 }
 
 .coffee { background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93"); }
 .matcha { background-image: url("487791299_17862510885377611_7754735502243092933_n.jpg"); }
 .herbal { background-image: url("https://images.unsplash.com/photo-1544787219-7f47ccb76574"); }
-
-@media (max-width: 768px) {
-  .gem {
-    width: 270px;
-    height: 350px;
-  }
-
-    .gem::after {
-    width: 90%;
-    height: 20px;
-    bottom: -18px;
-  }
-}
 
 
