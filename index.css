@@ -157,6 +157,7 @@ body {
 
 
 .hero {
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -170,6 +171,9 @@ body {
 }
 
 .hero-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
   max-width: 1600px;         /* adjust size as you want */
   width: 100%;              /* makes it responsive */
   height: auto;
@@ -287,7 +291,7 @@ body {
   position: absolute;
   width: 440px;
   height: 600px;
-  background-image: url("download.png");
+  background-image: url("");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
