@@ -49,7 +49,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background-image: url("WhatsApp Image 2026-01-28 at 7.15.42 PM.jpeg");
+  background-image: url("jade background.jpg");
   opacity: 0.08;
   z-index: 9999;
 }
@@ -184,11 +184,11 @@ body {
 
 @keyframes heroFloat {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(20px); }
+  50% { transform: translateY(30px); }
 }
 
 @keyframes glow {
-  0% { filter: drop-shadow(0 0 10px #aef7ff); }
+  0% { filter: drop-shadow(0 0 5px #aef7ff); }
   100% { filter: drop-shadow(0 0 15px #aef7ff); }
 }
 
