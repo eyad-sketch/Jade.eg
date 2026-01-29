@@ -501,4 +501,33 @@ footer .social-icons a:hover img {
 .matcha { background-image: url("487791299_17862510885377611_7754735502243092933_n.jpg"); }
 .herbal { background-image: url("https://images.unsplash.com/photo-1544787219-7f47ccb76574"); }
 
+#nav-links a,
+#nav-links a:visited,
+#nav-links a:active,
+#nav-links a:focus {
+  text-decoration: none;
+  color: #182620;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+#nav-links a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+#nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #4f7f6a;
+  transition: width 0.3s ease;
+}
+
+#nav-links a:hover::after {
+  width: 100%;
+}
 
