@@ -532,4 +532,7 @@ footer .social-icons a:hover img {
   width: 100%;
 }
 
-
+.social-icons a {
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* ensures hover/spacing works nicely */
+}
